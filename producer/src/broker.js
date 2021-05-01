@@ -7,7 +7,7 @@ module.exports.start = async () => {
   const channel = await connection.createChannel();
   await channel.assertQueue('tasks', { durable: true });
 
-  Array(10)
+  Array(1)
     .fill()
     .map(async (x, y) => {
       const task = { message: `Task ${y}` };

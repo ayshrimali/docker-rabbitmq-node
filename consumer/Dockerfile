@@ -8,4 +8,5 @@ VOLUME [ "/usr/src/app" ]
 
 RUN npm install -g nodemon
 
-CMD [ "nodemon", "-L", "src/index.js" ]
+CMD npm i && nodemon -L src/index.js 
+#[ "npm", "i", "&&", "nodemon", "-L", "src/index.js" ]
